@@ -54,7 +54,8 @@ function ensureAuthenticated(req, res, next) {
 
 app.get("/", (req, res) => {
     const html = "<a href='/auth/github'>Login with GitHub</a>";
-    res.send(html);
+    const html2 = "<a href='/auth/github'>Login with GitHub</a>";
+    res.send(html + "<br>" + html2);
 });
 
 app.get("/auth/github", 
